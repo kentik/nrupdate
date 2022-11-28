@@ -17,8 +17,8 @@ import (
 )
 
 const (
-	PG_RW_CON = "PG_RW_CON"
-	PG_RO_CON = "PG_RO_CON"
+	PG_RW_CON = "PG_CONNECTION_RW"
+	PG_RO_CON = "PG_CONNECTION"
 )
 
 type NRUpdate struct {
