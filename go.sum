@@ -222,10 +222,6 @@ github.com/judwhite/go-svc v1.2.1 h1:a7fsJzYUa33sfDJRF2N/WXhA+LonCEEY8BJb1tuS5tA
 github.com/judwhite/go-svc v1.2.1/go.mod h1:mo/P2JNX8C07ywpP9YtO2gnBgnUiFTHqtsZekJrUuTk=
 github.com/kentik/go-metrics v0.0.0-20200109025407-4bfd4a9b42c5 h1:1rZ84eG01A0q93bOxVEY38qvJlfbcFlgKboFERP9TRQ=
 github.com/kentik/go-metrics v0.0.0-20200109025407-4bfd4a9b42c5/go.mod h1:29P02QqC48eCWcb9A4HvtEQypXkw5T9U9DxF1fn/kbs=
-github.com/kentik/ktranslate v1.0.1-0.20221123215702-151fb14bd5e2 h1:dmhn06V8E2ZjHqgXbnfvqLLSE9L2LlSyq7adlEloFHQ=
-github.com/kentik/ktranslate v1.0.1-0.20221123215702-151fb14bd5e2/go.mod h1:7oX+HjCBvsjQ8/oM1v8we+EW7FzWFk8orsqEbCsORdY=
-github.com/kentik/ktranslate v1.0.1-0.20221128230633-e6ae113c0a63 h1:7f7ZaNivdUW70K2JWdIn++MWymsQSsqsD80K0BOBfys=
-github.com/kentik/ktranslate v1.0.1-0.20221128230633-e6ae113c0a63/go.mod h1:vbUX5s4d9DfBW5BjXP7Z7WpT7cWakI8uLFB6fcX9KV0=
 github.com/kentik/ktranslate v1.0.1-0.20221128230956-e444628dd369 h1:cGytyQFSEzraGpg6PNoci4HzWrHG5HnKRFW3U5UC8ss=
 github.com/kentik/ktranslate v1.0.1-0.20221128230956-e444628dd369/go.mod h1:vbUX5s4d9DfBW5BjXP7Z7WpT7cWakI8uLFB6fcX9KV0=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
@@ -443,8 +439,7 @@ golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.0.0-20220209214540-3681064d5158/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20220227234510-4e6760a101f9/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20220328115105-d36c6a25d886/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
-golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 h1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=
-golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.2.0 h1:ljd4t30dBnAvMZaQCevtY0xLLD0A+bRZXbgLMLU1F/A=
 golang.org/x/sys v0.2.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod h1:jbD1KX2456YbFQfuXm/mYQcufACuNUgVhRMnK/tPxf8=
