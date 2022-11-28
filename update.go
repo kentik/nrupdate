@@ -112,15 +112,15 @@ func (n *NRUpdate) updateNRAlerts(ctx context.Context) error {
 update
   mn_device set
     edate=now(),
-    device_alert = '127.0.0.1:9456,$1'
+    device_alert = $1
 where
   device_name = 'ksynth'
-  and device_alert not like '%$2%'
+  and device_alert <> $2
   and company_id in (
     select id from mn_company
       where exist(company_kvs, 'nr_api_key') and company_status = 'V'
   )
-`, n.targetHost, n.targetHost)
+`, "127.0.0.1:9456,"+n.targetHost, "127.0.0.1:9456,"+n.targetHost)
 
 	if err != nil {
 		return err
