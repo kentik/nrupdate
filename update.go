@@ -69,12 +69,12 @@ func (kc *NRUpdate) Run(ctx context.Context) error {
 	}
 
 	// First update the device_alert field to send flow to the target host for any missing devices.
-	if err := kc.updateNRAlerts(); err != nil {
+	if err := kc.updateNRAlerts(ctx); err != nil {
 		return err
 	}
 
 	// Then update our config file with the lastest info.
-	if err := kc.updateConfigFile(); err != nil {
+	if err := kc.updateConfigFile(ctx); err != nil {
 		return err
 	}
 
@@ -107,20 +107,20 @@ func (kc *NRUpdate) cleanup() error {
 	return nil
 }
 
-func (n *NRUpdate) updateNRAlerts() error {
-	res, err := n.pgdbRW.Exec(`
+func (n *NRUpdate) updateNRAlerts(ctx context.Context) error {
+	res, err := n.pgdbRW.ExecContext(ctx, `
 update
   mn_device set
     edate=now(),
     device_alert = '127.0.0.1:9456,$1'
 where
   device_name = 'ksynth'
-  and device_alert not like '%$1%'
+  and device_alert not like '%$2%'
   and company_id in (
     select id from mn_company
       where exist(company_kvs, 'nr_api_key') and company_status = 'V'
   )
-`, n.targetHost)
+`, n.targetHost, n.targetHost)
 
 	if err != nil {
 		return err
@@ -132,8 +132,8 @@ where
 	return nil
 }
 
-func (n *NRUpdate) updateConfigFile() error {
-	rows, err := n.pgdb.Query(`
+func (n *NRUpdate) updateConfigFile(ctx context.Context) error {
+	rows, err := n.pgdb.QueryContext(ctx, `
 select
   a.id,
   company_kvs->'nr_api_key' as api_key,
