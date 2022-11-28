@@ -60,6 +60,9 @@ func main() {
 	if v := *configFilePath; v == "" {
 		bs.Fail("Flag --config is required.")
 	}
+	if v := *targetHost; v == "" {
+		bs.Fail("Flag --target-host is required.")
+	}
 
 	prefix := fmt.Sprintf("NRUpdate")
 	lc := logger.NewContextLFromUnderlying(logger.SContext{S: prefix}, bs.Logger)
