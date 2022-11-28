@@ -49,8 +49,8 @@ func main() {
 			panic(err)
 		}
 
-		cfg.Server.CfgPath = v
 		cfg = ktCfg
+		cfg.Server.CfgPath = v // Remember where we came from.
 	}
 
 	bs := baseserver.BoilerplateWithPrefix("nrupdate", Version, "chf.nrupdate", properties.NewEnvPropertyBacking(), nil, cfg.Server)
