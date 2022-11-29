@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/imdario/mergo v0.3.13
 	github.com/judwhite/go-svc v1.2.1
-	github.com/kentik/ktranslate v1.0.1-0.20221129002532-574077cd276c
+	github.com/kentik/ktranslate v1.0.1-0.20221129003321-49e6b010ac60
 	github.com/lib/pq v1.10.7
 )
 
