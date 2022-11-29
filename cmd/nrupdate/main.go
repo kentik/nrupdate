@@ -53,7 +53,7 @@ func main() {
 		cfg.Server.CfgPath = v // Remember where we came from.
 	}
 
-	bs := baseserver.BoilerplateWithPrefix("nrupdate", Version, "chf.nrupdate", properties.NewEnvPropertyBacking(), nil, &ktranslate.ServerConfig{LogLevel: "info"})
+	bs := baseserver.BoilerplateWithPrefix("nrupdate", Version, "chf.nrupdate", properties.NewEnvPropertyBacking(), nil, &ktranslate.ServerConfig{LogLevel: "info", MetricsEndpoint: "none"})
 	bs.BaseServerConfiguration.SkipEnvDump = true // Turn off dumping the envs on panic
 
 	// Check this seperately down here because we need baseserver.
