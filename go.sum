@@ -222,8 +222,8 @@ github.com/judwhite/go-svc v1.2.1 h1:a7fsJzYUa33sfDJRF2N/WXhA+LonCEEY8BJb1tuS5tA
 github.com/judwhite/go-svc v1.2.1/go.mod h1:mo/P2JNX8C07ywpP9YtO2gnBgnUiFTHqtsZekJrUuTk=
 github.com/kentik/go-metrics v0.0.0-20200109025407-4bfd4a9b42c5 h1:1rZ84eG01A0q93bOxVEY38qvJlfbcFlgKboFERP9TRQ=
 github.com/kentik/go-metrics v0.0.0-20200109025407-4bfd4a9b42c5/go.mod h1:29P02QqC48eCWcb9A4HvtEQypXkw5T9U9DxF1fn/kbs=
-github.com/kentik/ktranslate v1.0.1-0.20221128235555-430eb15ee346 h1:lYu2r5I4cYbJ/y553izREJG/FrFMnGYrfErPIJf1NxU=
-github.com/kentik/ktranslate v1.0.1-0.20221128235555-430eb15ee346/go.mod h1:vbUX5s4d9DfBW5BjXP7Z7WpT7cWakI8uLFB6fcX9KV0=
+github.com/kentik/ktranslate v1.0.1-0.20221129002532-574077cd276c h1:MDH/MBVnan++kNczitZxwgSHSPQq5cYOwvdOz0qsRao=
+github.com/kentik/ktranslate v1.0.1-0.20221129002532-574077cd276c/go.mod h1:vbUX5s4d9DfBW5BjXP7Z7WpT7cWakI8uLFB6fcX9KV0=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/klauspost/compress v1.13.5/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=
 github.com/klauspost/compress v1.13.6 h1:P76CopJELS0TiO2mebmnzgWaajssP/EszplttgQxcgc=
